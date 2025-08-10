@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid Planner Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="controls">
+    <h2>Grid Planner Pro</h2>
+    <label>Name <input id="nameInput" type="text" placeholder="Object"></label>
+    <label>Width (mm) <input id="widthInput" type="number" value="500"></label>
+    <label>Height (mm) <input id="heightInput" type="number" value="500"></label>
+    <label>Color <input id="colorInput" type="color" value="#8ecae6"></label>
+    <button id="importBtn">Import</button>
+    <input id="importInput" type="file" accept=".json" style="display:none">
+    <button id="exportBtn">Export</button>
+    <div id="objectsList"></div>
+  </div>
+  <canvas id="gridCanvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
